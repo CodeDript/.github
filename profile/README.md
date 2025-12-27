@@ -298,9 +298,6 @@ Contributions are welcome. Please follow these steps:
 4. Push to your branch
 5. Submit a pull request for review
 
-## License
-
-This project is licensed under the MIT License.
 
 ## Support
 
