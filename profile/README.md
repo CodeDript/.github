@@ -2,7 +2,7 @@
 
 ## Overview
 
-CodeDript is a blockchain-based agreement management platform that facilitates secure contracts between clients and developers. The system uses Ethereum smart contracts for escrow payments, IPFS for decentralized document storage with complete transaction transparency.
+CodeDript is a blockchain-based agreement management platform that facilitates secure contracts between clients and developers. The system uses Ethereum smart contracts for escrow payments, IPFS for decentralized document hosting, with pinning provided by Pinata for high availability with complete transaction transparency.
 
 ## What is CodeDript?
 
@@ -50,7 +50,7 @@ Clients browse the marketplace, filter available gigs, and select developers bas
 - Both parties sign the agreement using MetaMask
 - Client's wallet is charged the total project amount
 - Funds are locked in the smart contract escrow
-- Project documents are uploaded to IPFS
+- Project documents are uploaded to IPFS via Pinata, which pins the data to ensure 24/7 availability on the network
 - IPFS content identifier (CID) and agreement metadata are recorded on the Ethereum testnet
 
 ### Project Execution
@@ -114,7 +114,7 @@ The platform consists of four main components:
 - User authentication and authorization
 - Database operations (MongoDB & Supabase)
 - Blockchain transaction coordination
-- IPFS file management via Pinata
+- IPFS integration: Uses Pinata as a remote pinning service to persist documents on the global IPFS network
 
 **Smart Contracts (codedript-blockchain)**
 
@@ -127,7 +127,7 @@ The platform consists of four main components:
 
 - Docker containerization
 - Nginx reverse proxy
-- SSL/TLS configuration
+- SSL configuration
 - Service orchestration
 
 
